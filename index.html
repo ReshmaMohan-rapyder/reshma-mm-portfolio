@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Reshma M M — Python backend developer available for freelance FastAPI, REST API, and database work. Based in Bangalore, India. Remote-friendly.">
+<title>Reshma M M | Python Backend Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav">
+  <a class="logo" href="#home">Reshma<span>.</span></a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact" class="nav-cta">Work With Me</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section id="home" class="hero">
+  <div class="hero-text">
+    <div class="badge-row">
+      <span class="badge">● Available for hire</span>
+      <span class="badge-loc">📍 Bangalore, India · Remote</span>
+    </div>
+    <h1>I build backends that <span>actually work.</span></h1>
+    <p class="lead">Python · FastAPI · REST APIs · PostgreSQL · React — from a single endpoint to a full deployed product. I take on freelance tasks, backend support and subcontracting work for developers and small teams.</p>
+    <div class="actions">
+      <a class="btn primary" href="#contact">Let's Work Together</a>
+      <a class="btn secondary" href="#projects">See My Projects</a>
+    </div>
+    <div class="hero-stats">
+      <div class="stat"><span class="stat-num">4+</span><span class="stat-label">Projects delivered</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">9mo</span><span class="stat-label">Professional experience</span></div>
+      <div class="stat-div"></div>
+      <div class="stat"><span class="stat-num">Full</span><span class="stat-label">Stack capable</span></div>
+    </div>
+  </div>
+  <div class="terminal">
+    <div class="terminal-header">
+      <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+      <span class="terminal-title">reshma_api.py</span>
+    </div>
+    <pre><code><b>from</b> fastapi <b>import</b> FastAPI, Depends
+<b>from</b> auth <b>import</b> verify_token
+
+app = FastAPI()
+
+@app.get(<i>"/api/projects"</i>)
+<b>async def</b> get_projects(
+    user = Depends(verify_token)
+):
+    <b>return</b> {
+      <i>"developer"</i>: <i>"Reshma M M"</i>,
+      <i>"stack"</i>: [<i>"FastAPI"</i>, <i>"PostgreSQL"</i>],
+      <i>"status"</i>: <i>"available"</i>,
+      <i>"location"</i>: <i>"Bangalore 🇮🇳"</i>
+    }</code></pre>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="about-grid">
+    <div class="about-left">
+      <p class="eyebrow">ABOUT ME</p>
+      <h2>Developer you can hand a task to and trust it gets done.</h2>
+    </div>
+    <div class="about-right">
+      <p>I'm a Python backend developer with hands-on experience building production APIs, microservices, authentication systems and data tools. Currently working on <strong>OneLenz</strong> — a B2B sales intelligence platform — where I build and maintain multiple FastAPI microservices, CRM integrations and AI-backed features.</p>
+      <p>I can also handle the frontend side — React, HTML, CSS — and deploy what I build. Whether you need a single API endpoint or a complete product shipped, I can help.</p>
+      <div class="about-chips">
+        <span>Python Backend</span>
+        <span>FastAPI Microservices</span>
+        <span>React Frontend</span>
+        <span>Full Deployment</span>
+        <span>CRM Integration</span>
+        <span>AI Integration</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="section">
+  <p class="eyebrow">WHAT I CAN DO FOR YOU</p>
+  <h2>Services</h2>
+  <div class="grid">
+    <article class="card">
+      <div class="card-icon">⚙️</div>
+      <h3>Python Backend</h3>
+      <p>Backend features, business logic, scripts and maintainable Python services built to last.</p>
+    </article>
+    <article class="card">
+      <div class="card-icon">🚀</div>
+      <h3>FastAPI & REST APIs</h3>
+      <p>Clean REST endpoints, request validation, API integration and performant backend services.</p>
+    </article>
+    <article class="card">
+      <div class="card-icon">🔐</div>
+      <h3>Authentication & Security</h3>
+      <p>JWT, OTP, password hashing, session management, role-based access control and RBAC flows.</p>
+    </article>
+    <article class="card">
+      <div class="card-icon">🗄️</div>
+      <h3>Database Integration</h3>
+      <p>PostgreSQL, SQLAlchemy, MySQL — schema design, complex queries, joins, filtering and aggregation.</p>
+    </article>
+    <article class="card">
+      <div class="card-icon">🧪</div>
+      <h3>API Testing & Debugging</h3>
+      <p>API and integration testing, systematic troubleshooting and root-cause investigation.</p>
+    </article>
+    <article class="card">
+      <div class="card-icon">📊</div>
+      <h3>Python Automation</h3>
+      <p>Excel and data-processing workflows, automated validation pipelines and reporting tools.</p>
+    </article>
+    <article class="card highlight-card">
+      <div class="card-icon">🌐</div>
+      <h3>Website Development & Deployment</h3>
+      <p>Full websites with HTML, CSS, JavaScript and React — connected to your backend APIs and deployed to production.</p>
+    </article>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <p class="eyebrow">SELECTED WORK</p>
+  <h2>Projects & Experience</h2>
+  <div class="projects">
+
+    <article class="project featured">
+      <div class="project-meta">
+        <small>BACKEND • MICROSERVICES • AI · CURRENT</small>
+        <span class="project-num">01</span>
+      </div>
+      <div class="project-body">
+        <h3>OneLenz — B2B Sales Intelligence Platform</h3>
+        <p>Backend for a sales intelligence platform used by account managers and sales teams. Built and maintained multiple FastAPI microservices — signals-service, email-connector, admin-service and lenzchat-service. Responsibilities included signal ingestion and classification, Zoho CRM sync (deals, contacts, accounts), JWT authentication, meeting data extraction, AI-assisted email drafting (PitchPro) and an LLM-backed chat assistant (LenzChat). PostgreSQL-backed with Docker Compose orchestration across all services.</p>
+        <div class="tags">
+          <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>JWT</span><span>Docker</span><span>Zoho CRM</span><span>Microservices</span><span>AI Integration</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <small>PYTHON • DATA PROCESSING</small>
+        <span class="project-num">02</span>
+      </div>
+      <div class="project-body">
+        <h3>Data Quality & Productivity Tool</h3>
+        <p>Flask-based internal tool for comparing production and delivery Excel data, automatically identifying mismatches and generating productivity and accuracy reports for operations teams.</p>
+        <div class="tags">
+          <span>Python</span><span>Flask</span><span>MySQL</span><span>Excel</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <small>BACKEND • AUTHENTICATION</small>
+        <span class="project-num">03</span>
+      </div>
+      <div class="project-body">
+        <h3>Authentication & Authorization API</h3>
+        <p>Complete auth system with REST APIs covering login, registration, OTP flows, password management, JWT authentication, Redis-backed session and token handling, and role-based permissions.</p>
+        <div class="tags">
+          <span>Python</span><span>FastAPI</span><span>PostgreSQL</span><span>Redis</span><span>JWT</span><span>Argon2id</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="project">
+      <div class="project-meta">
+        <small>BACKEND • API • DATABASE</small>
+        <span class="project-num">04</span>
+      </div>
+      <div class="project-body">
+        <h3>CRM & Data API Work</h3>
+        <p>Backend work involving account mapping, complex database joins, dynamic filtering, deal aggregation, third-party API integration and end-to-end testing.</p>
+        <div class="tags">
+          <span>FastAPI</span><span>SQLAlchemy</span><span>PostgreSQL</span><span>REST APIs</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+  <p class="note">⚠ Company projects are described at a high level to protect confidential code, customer data and internal implementation details.</p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="section">
+  <p class="eyebrow">TECHNICAL TOOLKIT</p>
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-group">
+      <h4>Backend</h4>
+      <div class="skill-chips">
+        <span>Python</span><span>FastAPI</span><span>Flask</span><span>REST APIs</span><span>Microservices</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Databases</h4>
+      <div class="skill-chips">
+        <span>PostgreSQL</span><span>SQLAlchemy</span><span>MySQL</span><span>Redis</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Auth & Security</h4>
+      <div class="skill-chips">
+        <span>JWT / RS256</span><span>Argon2id</span><span>RBAC</span><span>OTP</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Frontend</h4>
+      <div class="skill-chips">
+        <span>React</span><span>Vite</span><span>HTML</span><span>CSS</span><span>JavaScript</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Infra & Tools</h4>
+      <div class="skill-chips">
+        <span>Docker</span><span>Website Deployment</span><span>Git</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <h4>Integrations & Testing</h4>
+      <div class="skill-chips">
+        <span>Zoho CRM</span><span>AI Integration</span><span>API Testing</span><span>Integration Testing</span><span>Excel Processing</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section contact">
+  <div class="contact-inner">
+    <div class="contact-text">
+      <p class="eyebrow">LET'S WORK TOGETHER</p>
+      <h2>Got a project or task in mind?</h2>
+      <p>I'm open to freelance tasks, backend support, full project builds and subcontracting work with developers or small teams. Based in Bangalore — available remotely worldwide.</p>
+      <ul class="contact-list">
+        <li>✅ Single API endpoints or full backends</li>
+        <li>✅ Frontend + Backend + Deployment</li>
+        <li>✅ Subcontracting for agencies & freelancers</li>
+        <li>✅ Hourly or fixed-price — happy to discuss scope</li>
+      </ul>
+    </div>
+    <div class="contact-links">
+      <a class="btn primary" href="mailto:reshmamohan938@gmail.com">✉ Email Me</a>
+      <a class="btn secondary" href="https://www.linkedin.com/in/reshma-mm-a8713b227/" target="_blank">LinkedIn</a>
+      <a class="btn secondary" href="https://github.com/ReshmaMohan-rapyder" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer>
+  <span>© 2026 Reshma M M · Python Backend Developer · Bangalore, India</span>
+  <span class="footer-links">
+    <a href="mailto:reshmamohan938@gmail.com">reshmamohan938@gmail.com</a>
+  </span>
+</footer>
+
+</body>
+</html>
